@@ -49,19 +49,15 @@ async function checkForRespondables(message) {
 	responseMessage.length = 0;
 
 	const responseFunctions = client.responses[Symbol.iterator]();
-	/* responseMessage.push(client.responses.get('ggez'));
-	for (const m of responseMessage) {
-		console.log('got back ' + m.execute(message));
-	}*/
-	// console.log(responseFunctions);
+
 	for (const f of responseFunctions) {
-		console.log(f[1]);
-		responseMessage.push(f[1].execute(message));
+		const response = f[1].execute(message);
+		if (response != undefined) {
+			console.log(response);
+			responseMessage.push(response);
+		}
 	}
 
-	console.log('rm = ' + responseMessage[0]);
-
-	console.log(responseMessage[0]);
 	if(responseMessage.length) {
 		try {
 			message.channel.send(responseMessage, { split: true });
