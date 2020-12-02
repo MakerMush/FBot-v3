@@ -3,11 +3,11 @@ module.exports = {
 	execute(message) {
 		const reactEmojis = [];
 
-		if (message.content === 'f') {
+		if (message.content.toLowerCase() === 'f') {
 			reactEmojis.push('🇫');
 		}
 
-		const reactions_F = ['😭', '😢', '🙁', '😞', '☹️', '😦', '):', ':(', ')=', '=(', 'd:', 'd=', '**big f**', 'dang', 'welp'];
+		const reactions_F = ['😭', '😢', '🙁', '😞', '☹️', '😦', '):', ':(', ')=', '=(', 'D:', 'D=', '**big f**', 'dang', 'welp'];
 
 		for (const r of reactions_F) {
 			if (message.content.includes(r)) {
