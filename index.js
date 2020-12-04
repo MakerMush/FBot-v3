@@ -53,7 +53,7 @@ async function checkForRespondables(message) {
 	for (const f of responseFunctions) {
 		const response = f[1].execute(message);
 		if (response != undefined) {
-			console.log(response);
+			// console.log(response);
 			responseMessage.push(response);
 		}
 	}
