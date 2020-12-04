@@ -1,23 +1,12 @@
 {
-
-    "name": "FBot-v3",
-  
-    "description": "The F Bot of the MiLL",
-  
-    "version": "0.3.0",
-  
-    "main": "bot.js",
-  
-    "scripts": {
-  
-      "start": "node bot.js"
-  
-    },
-  
-    "dependencies": {
-  
-      "request": "2.81.0"
-  
-    }
-  
+  "name": "FBot-v3",
+  "description": "The F Bot of the MiLL",
+  "version": "0.3.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "request": "2.81.0"
   }
+}
