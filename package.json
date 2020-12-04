@@ -1,5 +1,5 @@
 {
-  "name": "FBot-v3",
+  "name": "fbot",
   "description": "The F Bot of the MiLL",
   "version": "0.3.0",
   "main": "bot.js",
@@ -7,6 +7,7 @@
     "start": "node bot.js"
   },
   "dependencies": {
+    "discord.js": "^12.5.1",
     "request": "2.81.0"
   }
 }
