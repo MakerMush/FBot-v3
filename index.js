@@ -157,4 +157,15 @@ function checkForCommands(message) {
 	}
 }
 
-client.login(token);
+try {
+	client.login(client.login(process.env.BOT_TOKEN));
+} catch (error) {
+	console.log(error);
+	console.log ("could not login with heroku. trying local...");
+	try {
+		client.login(token);
+	} catch (error2) {
+		console.log(error2);
+		console.log("still could not login. aborting...");
+	}
+}
