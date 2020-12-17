@@ -6,7 +6,7 @@ module.exports = {
 			message.content.includes('smhmh') || 
 			message.content.includes('my head'))) 
 			{
-				return `'*smh my head, <@' + message.member.user.id + '>'`;
+				return '*smh my head, <@' + message.member.user.id + '>';
 		}
 	},
 };
