@@ -8,6 +8,6 @@ module.exports = {
 			}
 		}
 
-		return reactEmojis;
+		// return reactEmojis;
 	},
 };
